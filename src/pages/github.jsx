@@ -1,7 +1,7 @@
 export default function GitHub() {
   return (
     <div>
-      <h1>This is Github Page</h1>
+      <h2>개발자라면 꼭 알아야 하는 GitHub 상식🎓</h2>
       
     </div>
   );

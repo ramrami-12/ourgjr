@@ -1,7 +1,6 @@
-export default function Home() {
-  return (
-    <div>
-      <h1>This is Home Page</h1>
+export function Home() {
+    return <div>
+        <h2>Our Github, JavaScript, React</h2>
+        <h3>All of the FrontEnd</h3>
     </div>
-  );
 }
