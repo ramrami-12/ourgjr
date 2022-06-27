@@ -1,5 +1,5 @@
 // import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
-import { JSBasicNavLinks, JSLUNavLinks } from "../components/JSNavLinks";
+import { JSBasicNavLinks, JSLUNavLinks } from "../components/navLinks";
 
 export default function JavaScript() {
   return (
