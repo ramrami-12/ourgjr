@@ -2,25 +2,26 @@ import { Divider } from "antd";
 // import { CopyBlock } from "react-code-blocks";
 import { MyCodeBlock } from "../components/codeblock";
 
-export function NodeJS() {
-  const SmallDetails = (props) => {
-    return (
-      <ul>
-        {props.contents.map((content, index) => {
-          return <li key={index}>{content}</li>;
-        })}
-      </ul>
-    );
-  };
-  const LiP = (props) => {
-    return (
-      <li>
-        <p>{props.content}</p>
-      </li>
-    );
-  };
+const SmallDetails = (props) => {
   return (
-    <div style={{ width: "100%", overflowY: "scroll", overflowX: "hidden"}}>
+    <ul>
+      {props.contents.map((content, index) => {
+        return <li key={index}>{content}</li>;
+      })}
+    </ul>
+  );
+};
+const LiP = (props) => {
+  return (
+    <li>
+      <p>{props.content}</p>
+    </li>
+  );
+};
+
+export function NodeJS() {
+  return (
+    <div className="div-detail">
       <h3>Node.JS</h3>
       <Divider />
       <ul>
@@ -83,7 +84,9 @@ export function NodeJS() {
         <MyCodeBlock code={"npm run dev"} language={"text"} />
         <LiP content={"When building"} />
         <MyCodeBlock
-          code={'"scripts": {\n   "dev": "parcel index.html"\n   "build": "parcel build index.html"\n},'}
+          code={
+            '"scripts": {\n   "dev": "parcel index.html"\n   "build": "parcel build index.html"\n},'
+          }
           language={"json"}
         />
         <p>to run:</p>
@@ -93,4 +96,26 @@ export function NodeJS() {
   );
 }
 
-// export function
+export function ScriptJS() {
+  return (
+    <div>
+      <h3>JavaSript</h3>
+      <Divider />
+      <p>To create a library of js functions, use</p>
+      <MyCodeBlock code={"export default function getType(data) {\n   return Object.prototype.toString.call(data).slice(8, -1);\n}"} language={"javascript"} />
+      <p>export default function to create library functions to use these functions:</p>
+      <MyCodeBlock code={"import getType from './the java script'"} language={'javascript'}/>
+      <p>기본적인 JavaScript 문법 설명 및 예제가 있는 github repository 입니다! 참고해주세용😚 (업데이트 진행 중)</p>
+      <a href="https://github.com/ramrami-12/Javascript-Basic.git">🔗 (Click Here!) Javascript Basic Links</a>
+    </div>
+  );
+}
+
+export function ClassJS() {
+  return (
+    <div>
+      <h3>Javascript Class</h3>
+      
+    </div>
+  );
+}
