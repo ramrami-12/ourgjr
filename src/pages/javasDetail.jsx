@@ -1,26 +1,10 @@
 import { Divider } from "antd";
 // import { CopyBlock } from "react-code-blocks";
 import { MyCodeBlock } from "../components/codeblock";
-
+import { SmallDetails, LiP } from "../components/indentComponents";
 export function NodeJS() {
-  const SmallDetails = (props) => {
-    return (
-      <ul>
-        {props.contents.map((content, index) => {
-          return <li key={index}>{content}</li>;
-        })}
-      </ul>
-    );
-  };
-  const LiP = (props) => {
-    return (
-      <li>
-        <p>{props.content}</p>
-      </li>
-    );
-  };
   return (
-    <div style={{ width: "100%", overflowY: "scroll", overflowX: "hidden"}}>
+    <div style={{ width: "100%", overflowY: "scroll", overflowX: "hidden" }}>
       <h3>Node.JS</h3>
       <Divider />
       <ul>
@@ -83,7 +67,9 @@ export function NodeJS() {
         <MyCodeBlock code={"npm run dev"} language={"text"} />
         <LiP content={"When building"} />
         <MyCodeBlock
-          code={'"scripts": {\n   "dev": "parcel index.html"\n   "build": "parcel build index.html"\n},'}
+          code={
+            '"scripts": {\n   "dev": "parcel index.html"\n   "build": "parcel build index.html"\n},'
+          }
           language={"json"}
         />
         <p>to run:</p>
