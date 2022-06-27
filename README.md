@@ -1,4 +1,4 @@
-url: https://ramrami-12.github.io/ourgjr
+url: https://ramrami-12.github.io/ourgjr/
 
 
 - antd: 4.21.3
