@@ -22,7 +22,7 @@ function App() {
     <div className={styles.main}>
       <div style={divStyle}>
         <h1 style={{color: "#596c80"}}>Index</h1>
-        <BrowserRouter>
+        <BrowserRouter basename="process.env.PUBLIC_URL">
           <MainNavLinks />
           <Routes>
             <Route path="/" element={<Home />} />{" "}
