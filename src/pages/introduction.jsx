@@ -1,11 +1,12 @@
 import styles from "../styles/main.module.css";
 
 export function Intro() {
-  const refers = ["Json 위키백과", "Lodash", "React-Code-Block"];
+  const refers = ["Json 위키백과", "Lodash", "React-Code-Block", "Jest"];
   const links = [
     "https://ko.wikipedia.org/wiki/JSON",
     "https://lodash.com/docs/4.17.15",
     "https://www.npmjs.com/package/react-code-blocks",
+    "https://mulder21c.github.io/jest/docs/en/next/getting-started.html"
   ];
   const RefersMap = (props) => {
     return (
@@ -43,7 +44,7 @@ export function Intro() {
         span2={" in summer, 2022."}
       />
       <p>
-        저희가 회사에서 공부했던 frontend 내용들을 정리하기 위해 사이트를
+        저희가 회사에서 공부했던 frontend 내용들을 정리하고 연습해보기 위해 react 사이트를
         만들었습니다.
       </p>
       <p>
@@ -64,9 +65,9 @@ export function Intro() {
       <ContainLinks
         span1={"fastcampus 강의 "}
         link={"https://fastcampus.co.kr/courses/203720/clips/"}
-        a={"'한 번에 끝내는 프론트엔드 개발 초격차 패키지 Online.'"}
+        a={"🔗 한 번에 끝내는 프론트엔드 개발 초격차 패키지 Online"}
         span2={
-          " 를 들으면서 정리한 내용과 구글링 등을 통해 개인적으로 공부한 내용이 포함 되어 있습니다!"
+          " 을 들으면서 정리한 내용과 구글링 등을 통해 개인적으로 공부한 내용이 포함 되어 있습니다!"
         }
       />
       <div>

@@ -79,4 +79,26 @@ export function NodeJS() {
   );
 }
 
-// export function
+export function ScriptJS() {
+  return (
+    <div>
+      <h3>JavaSript</h3>
+      <Divider />
+      <p>To create a library of js functions, use</p>
+      <MyCodeBlock code={"export default function getType(data) {\n   return Object.prototype.toString.call(data).slice(8, -1);\n}"} language={"javascript"} />
+      <p>export default function to create library functions to use these functions:</p>
+      <MyCodeBlock code={"import getType from './the java script'"} language={'javascript'}/>
+      <p>기본적인 JavaScript 문법 설명 및 예제가 있는 github repository 입니다! 참고해주세용😚 (업데이트 진행 중)</p>
+      <a href="https://github.com/ramrami-12/Javascript-Basic.git">🔗 (Click Here!) Javascript Basic Links</a>
+    </div>
+  );
+}
+
+export function ClassJS() {
+  return (
+    <div>
+      <h3>Javascript Class</h3>
+      
+    </div>
+  );
+}
