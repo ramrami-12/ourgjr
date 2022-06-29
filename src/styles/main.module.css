@@ -10,17 +10,30 @@
 }
 
 /* COMMONS */
-.background {
+.mainL {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 30px;
   background-color: white;
   font-family: "Gamja Flower";
   overflow: scroll;
+  padding: 30px;
 }
+
+.mainD {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: "Gamja Flower";
+  overflow: scroll;
+  padding: 30px;
+}
+
 
 a {
   color: black;
@@ -31,7 +44,11 @@ a {
 }
 
 a:visited {
-  color: #F5D748;
+  color: #92B4EC;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 

@@ -7,7 +7,7 @@ export function MainNavLinks() {
     textDecoration: "none",
   };
   const activeStyle = {
-    color: "#748DA6",
+    color: "#92B4EC",
     textDecoration: "none",
   };
   return (
