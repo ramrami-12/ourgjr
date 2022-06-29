@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ourgjr/static/css/main.16fe4d44.css",
-    "main.js": "/ourgjr/static/js/main.95add86e.js",
+    "main.css": "/ourgjr/static/css/main.cca65d2b.css",
+    "main.js": "/ourgjr/static/js/main.6c862b28.js",
     "react-syntax-highlighter/refractor-core-import.js": "/ourgjr/static/js/react-syntax-highlighter/refractor-core-import.1a3c6bdb.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/ourgjr/static/js/react-syntax-highlighter_languages_refractor_abap.1c3cc033.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/ourgjr/static/js/react-syntax-highlighter_languages_refractor_actionscript.8f9aec9b.chunk.js",
@@ -156,8 +156,8 @@
     "react-syntax-highlighter_languages_refractor_yaml.js": "/ourgjr/static/js/react-syntax-highlighter_languages_refractor_yaml.550f74ce.chunk.js",
     "static/js/787.f40a678b.chunk.js": "/ourgjr/static/js/787.f40a678b.chunk.js",
     "index.html": "/ourgjr/index.html",
-    "main.16fe4d44.css.map": "/ourgjr/static/css/main.16fe4d44.css.map",
-    "main.95add86e.js.map": "/ourgjr/static/js/main.95add86e.js.map",
+    "main.cca65d2b.css.map": "/ourgjr/static/css/main.cca65d2b.css.map",
+    "main.6c862b28.js.map": "/ourgjr/static/js/main.6c862b28.js.map",
     "refractor-core-import.1a3c6bdb.chunk.js.map": "/ourgjr/static/js/react-syntax-highlighter/refractor-core-import.1a3c6bdb.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.1c3cc033.chunk.js.map": "/ourgjr/static/js/react-syntax-highlighter_languages_refractor_abap.1c3cc033.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.8f9aec9b.chunk.js.map": "/ourgjr/static/js/react-syntax-highlighter_languages_refractor_actionscript.8f9aec9b.chunk.js.map",
@@ -313,7 +313,7 @@
     "787.f40a678b.chunk.js.map": "/ourgjr/static/js/787.f40a678b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16fe4d44.css",
-    "static/js/main.95add86e.js"
+    "static/css/main.cca65d2b.css",
+    "static/js/main.6c862b28.js"
   ]
 }
