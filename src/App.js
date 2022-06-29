@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import styles from "./styles/main.module.css"
+import styles from "./styles/main.module.css";
 import { MainNavLinks } from "./components/navLinks";
 import { Home } from "./pages/home";
 import { Intro } from "./pages/introduction";
@@ -15,14 +15,15 @@ function App() {
     top: "10px",
     margin: "30px",
     padding: "30px",
-    backgroundColor: "white",
+    backgroundColor: "#F6F6F6",
     borderRadius: "30px",
   };
   return (
     <div className={styles.main}>
       <div style={divStyle}>
-        <h1 style={{color: "#596c80"}}>Index</h1>
-        <BrowserRouter basename="process.env.PUBLIC_URL">
+        <span class="material-symbols-outlined">dark_mode</span>
+        <h1 style={{ color: "#596c80" }}>Index</h1>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <MainNavLinks />
           <Routes>
             <Route path="/" element={<Home />} />{" "}

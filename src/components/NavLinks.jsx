@@ -68,7 +68,7 @@ export function JSBasicNavLinks() {
   return (
     <div>
       <ul>
-        <li style={liStyle}>
+        <li className={styles.nav}>
           <NavLink to="/js/node" end>
             #1. Node.js
           </NavLink>
