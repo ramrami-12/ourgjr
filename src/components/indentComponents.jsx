@@ -1,5 +1,3 @@
-// import { useParams } from "react-router-dom";
-
 export const SmallDetails = (props) => {
   if (!Array.isArray(props.contents)) {
     return <ul>Input Array</ul>
