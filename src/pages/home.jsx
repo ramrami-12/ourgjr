@@ -1,4 +1,6 @@
-export function Home() {
+export function Home(props) {
+    const isDarkMode = props.mode;
+    
     return <div>
         <h2>Our Github, JavaScript, React 👉🏻 OurGJR🤣 </h2>
         <h3>All of the Front-End</h3>

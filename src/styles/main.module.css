@@ -10,6 +10,12 @@
 }
 
 /* COMMONS */
+li {
+  margin-bottom: 10px;
+}
+
+
+/* LIGHT MODE */
 .mainL {
   position: fixed;
   top: 0;
@@ -22,6 +28,20 @@
   padding: 30px;
 }
 
+.aL {
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.aL:visited {
+  color: #92B4EC;
+}
+
+
+/* DARK MODE */
 .mainD {
   position: fixed;
   top: 0;
@@ -34,21 +54,17 @@
   padding: 30px;
 }
 
-
-a {
-  color: black;
+.aD {
+  color: white;
   white-space: nowrap;
   text-decoration: none;
   overflow: hidden;
   word-break: break-all;
 }
 
-a:visited {
-  color: #92B4EC;
-}
 
-li {
-  margin-bottom: 10px;
+.aD:visited {
+  color: #FFE69A;
 }
 
 
@@ -56,34 +72,10 @@ li {
 .contact {
   font-size: 13px;
   margin-left: 30px;
-  line-height: 0.8;
 }
 
 /* DETAIL DIV */
 .div-detail {
   width: 100%;
   overflow: auto;
-}
-
-/* CUSTOM TEXT */
-.text1 {
-  font-family: "Gamja Flower";
-  font-size: xx-large;
-  font-weight: bolder;
-}
-
-.text2 {
-  font-family: "Gamja Flower";
-  font-size: large;
-}
-
-.text3 {
-  font-family: "Gamja Flower";
-  font-size: medium;
-  color: #377D71; 
-}
-
-.text4 {
-  font-family: "Gamja Flower";
-  font-size: medium;
 }
