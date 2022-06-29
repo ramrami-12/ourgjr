@@ -9,10 +9,8 @@ import GIT from "./pages/github";
 import JS from "./pages/javascript";
 import REACT from "./pages/react";
 import { NodeJS, ScriptJS, ClassJS } from "./pages/javasDetail";
-import { Button } from "antd";
+import { Button, Divider } from "antd";
 import { BulbTwoTone } from "@ant-design/icons";
-import { MyDivider } from "./components/styledComonents";
-import { Text1 } from "./components/customText";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -20,39 +18,44 @@ function App() {
   const [iconColor, setIconColor] = useState("#FFE69A");
   const onClickModeIcon = () => {
     setDarkMode(!isDarkMode);
-    isDarkMode ? setIconColor("black") : setIconColor("#FFE69A");
+    isDarkMode ? setIconColor("#FFE69A") : setIconColor("black");
     isDarkMode ? setMainMode(styles.mainL) : setMainMode(styles.mainD);
-    console.log(isDarkMode);
   };
+  const modeStyle = {
+    color : isDarkMode ? "white" : "black",
+  }
   return (
-      <div style={{padding:30}}>
-        <div className={mainMode}>
-          <Button
-            shape="circle"
-            icon={<BulbTwoTone twoToneColor={iconColor} />}
-            onClick={onClickModeIcon}
-            size="large"
-            style={{ position: "absolute", right: "10%" }}
-          />
-          <Text1 text={"Index"}/>
+    <div style={{ padding: 30 }}>
+      <div className={mainMode}>
+        <Button
+          shape="circle"
+          icon={<BulbTwoTone twoToneColor={iconColor} />}
+          onClick={onClickModeIcon}
+          size="large"
+          style={{ position: "absolute", right: "10%" }}
+        />
+        <div style={modeStyle}>
+          <h1 style={modeStyle}>Index</h1>
+          <p style={{ color: "white", fontSize: "10px" }}>다크모드는 개발 중~</p>
           <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <MainNavLinks />
-            <MyDivider />
+            <MainNavLinks mode={isDarkMode}/>
+            <Divider />
             <Routes>
-              <Route path="/" element={<Home />} />{" "}
-              <Route path="/intro" element={<Intro />} />
-              <Route path="/git" element={<GIT />} />
-              <Route path="/js" element={<JS />} />
-              <Route path="/js/node" element={<NodeJS />} />
-              <Route path="/js/script" element={<ScriptJS />} />
-              <Route path="/js/class" element={<ClassJS />} />
-              <Route path="/js/data" element={<NodeJS />} />
-              <Route path="/js/levelup" element={<NodeJS />} />
+              <Route path="/" element={<Home mode={isDarkMode} />} />
+              <Route path="/intro" element={<Intro mode={isDarkMode} />} />
+              <Route path="/git" element={<GIT mode={isDarkMode} />} />
+              <Route path="/js" element={<JS mode={isDarkMode} />} />
+              <Route path="/js/node" element={<NodeJS mode={isDarkMode} />} />
+              <Route path="/js/script" element={<ScriptJS mode={isDarkMode} />} />
+              <Route path="/js/class" element={<ClassJS mode={isDarkMode} />} />
+              <Route path="/js/data" element={<NodeJS mode={isDarkMode} />} />
+              <Route path="/js/levelup" element={<NodeJS mode={isDarkMode} />} />
               <Route path="/react" element={<REACT />} />
             </Routes>
           </BrowserRouter>
         </div>
       </div>
+    </div>
   );
 }
 

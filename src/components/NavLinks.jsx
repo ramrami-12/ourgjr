@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 import styles from "../styles/main.module.css";
 
-export function MainNavLinks() {
+export function MainNavLinks(props) {
+  const isDarkMode = props.mode;
   const defaultStyle = {
-    color: "black",
+    color: isDarkMode ? "white" : "black",
     textDecoration: "none",
   };
   const activeStyle = {
-    color: "#92B4EC",
+    color: isDarkMode ? "#FFE69A" : "#92B4EC",
     textDecoration: "none",
   };
   return (

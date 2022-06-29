@@ -1,7 +1,6 @@
 // import {CodeBlock} from "react-code-blocks";
+import { Divider } from "antd";
 import { MyCodeBlock } from "../components/codeblock";
-import { Text2 } from "../components/customText";
-import { MyDivider } from "../components/styledComonents";
 
 export default function GitHub() {
   const configCode =
@@ -13,7 +12,7 @@ export default function GitHub() {
   const pullCode = "git pull <Remote Name> <Branch Name>";
   return (
     <div style={{ overflow: "scroll" }}>
-      <Text2 text={"개발자라면 꼭 알아야 하는 GitHub 상식🎓"} />
+      <h2>개발자라면 꼭 알아야 하는 GitHub 상식🎓</h2>
       <h3>Git Config</h3>
       <MyCodeBlock code={configCode} language={"text"} />
       <h3>Git add 👉🏻 commit 👉🏻 push</h3>
@@ -22,7 +21,7 @@ export default function GitHub() {
       <MyCodeBlock code={crCode} language={"text"} />
       <h3>Git Pull</h3>
       <MyCodeBlock code={pullCode} language={"text"} />
-      <MyDivider />
+      <Divider />
       <details>
         <summary>기본적인 깃 사용법</summary>
         <p>1. 기존의 git repository를 clone해서 사용하고 싶은 경우</p>

@@ -1,7 +1,12 @@
 import styles from "../styles/main.module.css";
 import { GithubOutlined } from "@ant-design/icons";
 
-export function Intro() {
+export function Intro(props) {
+  const isDarkMode = props.mode;
+  const modeStyle = {
+    color: isDarkMode ? "white" : "black",
+  }
+  const linkStyle = isDarkMode ? styles.aD : styles.aL; 
   const refers = [
     "github에 react deploy 하기",
     "베니스가 애용하는 색 조합 사이트(color hunt)",
@@ -20,7 +25,7 @@ export function Intro() {
         {props.refers.map((refer, index) => {
           return (
             <li key={index}>
-              <a href={props.links[index]}>{refer}</a>
+              <a href={props.links[index]} className={linkStyle}>{refer}</a>
             </li>
           );
         })}
@@ -35,15 +40,14 @@ export function Intro() {
     return (
       <div>
         <span>{props.span1}</span>
-        <a href={props.link}>{props.a}</a>
+        <a href={props.link} className={linkStyle}>{props.a}</a>
         <span>{props.span2}</span>
       </div>
     );
   };
   return (
     <div>
-      <h2>Hi there~🖐🏻 </h2>
-      <p style={{color:"white"}}>다크모드를 해야 보이는 글씨입니당 ㅎㅎㅎㅎ 재밌죠?? 지금은 다크모드 개발 중!!! 다시 밝은 모드로 돌아가서 공부하세요~</p>
+      <h2 style={modeStyle}>Hi there~🖐🏻 </h2>
       <ContainLinks
         span1={"We are Venice🙋🏻‍♀️ and Big Arm🙋🏻‍♂️, interns of "}
         link={"https://heringsglobal.com/"}
@@ -61,20 +65,24 @@ export function Intro() {
       <p>그럴 경우 아래 연락처로 문의 주세요!😁 (모든 문의 환영🙌🏻)</p>
       <div className={styles.contact}>
         <GithubOutlined />
-        <a href="https://github.com/ramrami-12" className={styles.a}>
+        <a href="https://github.com/ramrami-12" className={linkStyle}>
           {" "}
           Venice's Github Profile
         </a>
         <p>📧 Email: wislely66@gmail.com</p>
         <GithubOutlined />
-        <a href="https://github.com/BeansWithCheese" className={styles.a}>
+        <a href="https://github.com/BeansWithCheese" className={linkStyle}>
           {" "}
           Big Arm's Github profile
         </a>
         <p>📧 Email: dukuu0405@gmail.com</p>
       </div>
-      <i>이 사이트의 관전 뽀인트는 몽골인 빅암의 멋진 영어 설명🔠, 태생부터 한국인 엔뿌삐 베니스의 흥겨운 한국어 설명🇰🇷 입니다 재미있게 공부해주세요📝</i>
-      <div style={{height:"50px"}}></div>
+      <i>
+        이 사이트의 관전 뽀인트는 몽골인 빅암의 멋진 영어 설명🔠, 태생부터
+        한국인 엔뿌삐 베니스의 흥겨운 한국어 설명🇰🇷 입니다 재미있게
+        공부해주세요📝
+      </i>
+      <div style={{ height: "50px" }}></div>
       <ContainLinks
         span1={"❗️fastcampus 강의 "}
         link={"https://fastcampus.co.kr/courses/203720/clips/"}
@@ -84,7 +92,7 @@ export function Intro() {
         }
       />
       <div>
-        <h4>개발하면서 참고한 칭구들 👀</h4>
+        <h4 style={modeStyle}>개발하면서 참고한 칭구들 👀</h4>
         <RefersMap refers={refers} links={links} />
       </div>
     </div>
