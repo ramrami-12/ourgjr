@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.mainStyle {
+  position: "fixed";
+  top: 0;
+  left: 0;
+  width: "100%";
+  height: "100%";
+  background-color: "#F2D7D9";
+  font-family: "Nanum Gothic";
+  overflow-y: "scroll";
+};
+.divStyle {
+  position: "relative";
+  top: "10px";
+  margin: "30px";
+  padding: "30px";
+  background-color: "white";
+  border-radius: "30px";
+};

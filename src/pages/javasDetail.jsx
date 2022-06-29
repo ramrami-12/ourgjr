@@ -1,27 +1,10 @@
 import { Divider } from "antd";
 // import { CopyBlock } from "react-code-blocks";
 import { MyCodeBlock } from "../components/codeblock";
-
-const SmallDetails = (props) => {
-  return (
-    <ul>
-      {props.contents.map((content, index) => {
-        return <li key={index}>{content}</li>;
-      })}
-    </ul>
-  );
-};
-const LiP = (props) => {
-  return (
-    <li>
-      <p>{props.content}</p>
-    </li>
-  );
-};
-
+import { SmallDetails, LiP } from "../components/indentComponents";
 export function NodeJS() {
   return (
-    <div className="div-detail">
+    <div style={{ width: "100%", overflowY: "scroll", overflowX: "hidden" }}>
       <h3>Node.JS</h3>
       <Divider />
       <ul>
