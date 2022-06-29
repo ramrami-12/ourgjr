@@ -45,6 +45,7 @@ function App() {
             <Route path="/js/data" element={<NodeJS />} />
             <Route path="/js/levelup" element={<NodeJS />} />
             <Route path="/react" element={<REACT />} />
+            <Route path="/react/" element={<REACT />} />
           </Routes>
         </BrowserRouter>
       </div>

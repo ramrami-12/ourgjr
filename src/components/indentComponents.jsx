@@ -1,7 +1,9 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 export const SmallDetails = (props) => {
-  console.log(props);
+  if (!Array.isArray(props.contents)) {
+    return <ul>Input Array</ul>
+  }
 
   return (
     <ul>
@@ -14,7 +16,7 @@ export const SmallDetails = (props) => {
 
 export const LiP = (props) => {
   return (
-    <li>
+    <li className={props.className}>
       <p>{props.content}</p>
     </li>
   );
