@@ -72,8 +72,10 @@ export function Intro() {
         </a>
         <p>📧 Email: dukuu0405@gmail.com</p>
       </div>
+      <i>이 사이트의 관전 뽀인트는 몽골인 빅암의 멋진 영어 설명🔠, 태생부터 한국인 엔뿌삐 베니스의 흥겨운 한국어 설명🇰🇷 입니다 재미있게 공부해주세요📝</i>
+      <div style={{height:"50px"}}></div>
       <ContainLinks
-        span1={"fastcampus 강의 "}
+        span1={"❗️fastcampus 강의 "}
         link={"https://fastcampus.co.kr/courses/203720/clips/"}
         a={"🔗 한 번에 끝내는 프론트엔드 개발 초격차 패키지 Online"}
         span2={
@@ -81,7 +83,7 @@ export function Intro() {
         }
       />
       <div>
-        <h4>개발하면서 사용된 칭구들 👀</h4>
+        <h4>개발하면서 참고한 칭구들 👀</h4>
         <RefersMap refers={refers} links={links} />
       </div>
     </div>

@@ -64,3 +64,26 @@ li {
   width: 100%;
   overflow: auto;
 }
+
+/* CUSTOM TEXT */
+.text1 {
+  font-family: "Gamja Flower";
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.text2 {
+  font-family: "Gamja Flower";
+  font-size: large;
+}
+
+.text3 {
+  font-family: "Gamja Flower";
+  font-size: medium;
+  color: #377D71; 
+}
+
+.text4 {
+  font-family: "Gamja Flower";
+  font-size: medium;
+}
