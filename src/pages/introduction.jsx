@@ -43,6 +43,7 @@ export function Intro() {
   return (
     <div>
       <h2>Hi there~🖐🏻 </h2>
+      <p style={{color:"white"}}>다크모드를 해야 보이는 글씨입니당 ㅎㅎㅎㅎ 재밌죠?? 지금은 다크모드 개발 중!!! 다시 밝은 모드로 돌아가서 공부하세요~</p>
       <ContainLinks
         span1={"We are Venice🙋🏻‍♀️ and Big Arm🙋🏻‍♂️, interns of "}
         link={"https://heringsglobal.com/"}

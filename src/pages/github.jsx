@@ -94,7 +94,7 @@ export default function GitHub() {
       </details>
       <div style={{height:"50px"}}></div>
       <i>
-        ❗️주의❗️ git hub에서는 이 외에서도 협업과 code 관리를 위해 많은 기능을
+        ❗️주의❗️ git hub에서는 이 외에도 협업과 code 관리를 위해 많은 기능을
         포함하고 있답니다! github 사용에 미숙하시다면 꼭!!! 구글링과 연습을 통해
         익숙해지기를 바래요😉
       </i>
