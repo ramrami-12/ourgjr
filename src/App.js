@@ -11,14 +11,6 @@ import { NodeJS, ScriptJS, ClassJS } from "./pages/javasDetail";
 import { Divider } from "antd";
 
 function App() {
-  // const divStyle = {
-  //   position: "relative",
-  //   top: "10px",
-  //   margin: "30px",
-  //   padding: "30px",
-  //   backgroundColor: "#F6F6F6",
-  //   borderRadius: "30px",
-  // };
   return (
     <div className={styles.background}>
         <span class="material-symbols-outlined">dark_mode</span>
