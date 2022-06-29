@@ -1,21 +1,23 @@
+/* MAINCOLOR : #8879B0 */
 /* NAVLINKS */
 .nav {
   margin-bottom: 10px;
 }
 
 .active {
-  color: #748da6;
+  color: #F5D748;
   text-decoration: none;
 }
 
 /* COMMONS */
-.main {
+.background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f2d7d9;
+  margin: 30px;
+  background-color: white;
   font-family: "Gamja Flower";
   overflow: scroll;
 }
@@ -29,12 +31,9 @@ a {
 }
 
 a:visited {
-  color: #748da6;
+  color: #F5D748;
 }
 
-h3 {
-  color: #596c80;
-}
 
 /* CONTACT DIV */
 .contact {

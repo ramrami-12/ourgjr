@@ -64,21 +64,21 @@ export function MainNavLinks() {
 }
 
 export function JSBasicNavLinks() {
-  const liStyle = { marginBottom: 10 };
+  // const liStyle = { marginBottom: 10 };
   return (
     <div>
       <ul>
-        <li style={liStyle}>
+        <li className={styles.nav}>
           <NavLink to="/js/node" end>
             #1. Node.js
           </NavLink>
         </li>
-        <li style={liStyle}>
+        <li className={styles.nav}>
           <NavLink to="/js/script" end>
             #2. JavaScript
           </NavLink>
         </li>
-        <li style={liStyle}>
+        <li className={styles.nav}>
           <NavLink to="/js/class" end>
             #3. Class
           </NavLink>
