@@ -1,12 +1,18 @@
 import styles from "../styles/main.module.css";
+import { GithubOutlined } from "@ant-design/icons";
 
 export function Intro() {
-  const refers = ["Json 위키백과", "Lodash", "React-Code-Block", "Jest"];
+  const refers = [
+    "github에 react deploy 하기",
+    "베니스가 애용하는 색 조합 사이트(color hunt)",
+    "ant design github",
+    "ant design components",
+  ];
   const links = [
-    "https://ko.wikipedia.org/wiki/JSON",
-    "https://lodash.com/docs/4.17.15",
-    "https://www.npmjs.com/package/react-code-blocks",
-    "https://mulder21c.github.io/jest/docs/en/next/getting-started.html"
+    "https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/",
+    "https://colorhunt.co",
+    "https://github.com/ant-design/ant-design.git",
+    "https://ant.design/components/overview/",
   ];
   const RefersMap = (props) => {
     return (
@@ -44,8 +50,8 @@ export function Intro() {
         span2={" in summer, 2022."}
       />
       <p>
-        저희가 회사에서 공부했던 frontend 내용들을 정리하고 연습해보기 위해 react 사이트를
-        만들었습니다.
+        저희가 회사에서 공부했던 frontend 내용들을 정리하고 연습해보기 위해
+        react 사이트를 만들었습니다.
       </p>
       <p>
         워낙 빠른 업데이트를 하는 분야이다 보니 버전 오류 등 여러 수정 사항이
@@ -53,12 +59,16 @@ export function Intro() {
       </p>
       <p>그럴 경우 아래 연락처로 문의 주세요!😁 (모든 문의 환영🙌🏻)</p>
       <div className={styles.contact}>
+        <GithubOutlined />
         <a href="https://github.com/ramrami-12" className={styles.a}>
-          🔗 Venice's Github Profile
+          {" "}
+          Venice's Github Profile
         </a>
         <p>📧 Email: wislely66@gmail.com</p>
+        <GithubOutlined />
         <a href="https://github.com/BeansWithCheese" className={styles.a}>
-          🔗 Big Arm's Github profile
+          {" "}
+          Big Arm's Github profile
         </a>
         <p>📧 Email: dukuu0405@gmail.com</p>
       </div>
@@ -71,7 +81,7 @@ export function Intro() {
         }
       />
       <div>
-        <h4>참고 링크 (References)</h4>
+        <h4>개발하면서 사용된 칭구들 👀</h4>
         <RefersMap refers={refers} links={links} />
       </div>
     </div>
