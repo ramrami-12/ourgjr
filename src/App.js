@@ -11,7 +11,8 @@ import REACT from "./pages/react";
 import { NodeJS, ScriptJS, ClassJS } from "./pages/javasDetail";
 import { Button } from "antd";
 import { BulbTwoTone } from "@ant-design/icons";
-import { MyDivider } from "./components/styled-comonents";
+import { MyDivider } from "./components/styledComonents";
+import { Text1 } from "./components/customText";
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -33,7 +34,7 @@ function App() {
             size="large"
             style={{ position: "absolute", right: "10%" }}
           />
-          <h1>Index</h1>
+          <Text1 text={"Index"}/>
           <BrowserRouter basename={process.env.PUBLIC_URL}>
             <MainNavLinks />
             <MyDivider />
