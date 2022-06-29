@@ -8,23 +8,24 @@ import GIT from "./pages/github";
 import JS from "./pages/javascript";
 import REACT from "./pages/react";
 import { NodeJS, ScriptJS, ClassJS } from "./pages/javasDetail";
+import { Divider } from "antd";
 
 function App() {
-  const divStyle = {
-    position: "relative",
-    top: "10px",
-    margin: "30px",
-    padding: "30px",
-    backgroundColor: "#F6F6F6",
-    borderRadius: "30px",
-  };
+  // const divStyle = {
+  //   position: "relative",
+  //   top: "10px",
+  //   margin: "30px",
+  //   padding: "30px",
+  //   backgroundColor: "#F6F6F6",
+  //   borderRadius: "30px",
+  // };
   return (
-    <div className={styles.main}>
-      <div style={divStyle}>
+    <div className={styles.background}>
         <span class="material-symbols-outlined">dark_mode</span>
         <h1 style={{ color: "#596c80" }}>Index</h1>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <MainNavLinks />
+          <Divider style={{borderWidth: 5, borderColor: "#92B4EC"}} />
           <Routes>
             <Route path="/" element={<Home />} />{" "}
             <Route path="/intro" element={<Intro />} />
@@ -38,7 +39,6 @@ function App() {
             <Route path="/react" element={<REACT />} />
           </Routes>
         </BrowserRouter>
-      </div>
     </div>
   );
 }
