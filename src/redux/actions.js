@@ -1,8 +1,8 @@
-export const IS_DARK = false;
+export const CHANGE_MODE = false;
 
 export function displayMode(mode) {
     return {
-        type: IS_DARK,
+        type: CHANGE_MODE,
         mode,
     };
 }

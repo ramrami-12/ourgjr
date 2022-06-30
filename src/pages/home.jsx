@@ -1,4 +1,7 @@
-export function Home(props) {
+import { useReduxState } from "../hooks/useReduxState";
+
+export function Home() {
+  const isDarkMode = useReduxState();
   return (
     <div>
       <h2>
