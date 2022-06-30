@@ -1,4 +1,6 @@
-/* MAINCOLOR : #8879B0 */
+/* MAINCOLOR(LIGHT) : #92B4EC */
+/* MAINCOLOR(DARK) : #FFE69A: */
+
 /* NAVLINKS */
 .nav {
   margin-bottom: 10px;
@@ -40,6 +42,9 @@ li {
   color: #92B4EC;
 }
 
+.textL {
+  color: black;
+}
 
 /* DARK MODE */
 .mainD {
@@ -67,6 +72,10 @@ li {
   color: #FFE69A;
 }
 
+
+.textD {
+  color: white;
+}
 
 /* CONTACT DIV */
 .contact {

@@ -1,8 +1,9 @@
 import styles from "../styles/main.module.css";
 import { GithubOutlined } from "@ant-design/icons";
+import { useReduxState } from "../hooks/useReduxState";
 
-export function Intro(props) {
-  const isDarkMode = props.mode;
+export function Intro() {
+  const isDarkMode = useReduxState();
   const modeStyle = {
     color: isDarkMode ? "white" : "black",
   }
